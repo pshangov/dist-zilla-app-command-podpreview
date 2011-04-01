@@ -67,7 +67,7 @@ A L<Dist::Zilla> command to preview the munged pod of a module in a browser usin
 
 =head1 SEE ALSO
 
-=for: list
+=for :list
 * L<Dist::Zilla>
 * L<App::PodPreview>
 
