@@ -52,7 +52,7 @@ sub execute
 
     my ($fh, $filename) = tempfile();
     print $fh $object->content or croak $!;
-    close $fh or corak $!;
+    close $fh or croak $!;
     podpreview($filename);
 }
 
