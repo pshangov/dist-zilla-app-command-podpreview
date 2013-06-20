@@ -44,7 +44,10 @@ sub execute
     my @filenames = "lib/$module.pm";
     push @filenames, "bin/$module", $module if !$colons;
 
-    my $object = first { $_->name ~~ @filenames } @{ $self->zilla->files };
+    my $object = first {
+        my $name = $_;
+        first { $name eq $_ } @filenames
+    } @{ $self->zilla->files };
     croak "Cannot find object " . $arg->[0] unless $object;
 
     my ($fh, $filename) = tempfile();
