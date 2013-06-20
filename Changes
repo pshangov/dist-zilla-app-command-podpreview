@@ -1,4 +1,4 @@
-Revision history for MooseX-Params
+Revision history for Dist-Zilla-App-Command-podpreview
 
         * fixed use of smartmatch (warns as experimental in 5.18) (ether)
 
