@@ -1,6 +1,9 @@
 Revision history for Dist-Zilla-App-Command-podpreview
 
-        * fixed use of smartmatch (warns as experimental in 5.18) (ether)
+0.003   02/08/2013
+        * fix use of smartmatch (warns as experimental in 5.18) (ether)
+        * fix misspelled function name (ether)
+        * fix dist name in Changes (ether)
 
 0.002   01/04/2011
         * Fix error in pod
