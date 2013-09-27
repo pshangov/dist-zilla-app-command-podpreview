@@ -45,7 +45,7 @@ sub execute
     push @filenames, "bin/$module", $module if !$colons;
 
     my $object = first {
-        my $name = $_;
+        my $name = $_->name;
         first { $name eq $_ } @filenames
     } @{ $self->zilla->files };
     croak "Cannot find object " . $arg->[0] unless $object;
